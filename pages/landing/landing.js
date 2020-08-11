@@ -13,7 +13,12 @@ Page({
       { text: 'Landing Page', url: '../../landing/landing' },
       { text: 'Other Landing Page', url: '../../landing/landing' },
     ],
-    thumb: '../../assets/vodalogo.png'
+    thumb: '../../assets/vodalogo.png',
+    user:
+    {
+      policies: [],
+      devices: []
+    },
   },
   handleTabClick({ index }) {
     this.setData({
@@ -37,6 +42,8 @@ Page({
   },
   // Listening lifecycle callback onLoad
   onLoad() {
+    this.data.user.policies = app.user.policies;
+    this.data.user.devices = app.user.devices;
   },
   // Listening lifecycle callback onShow
   onShow() {
@@ -65,25 +72,11 @@ Page({
     my.navigateTo({ url: '../policies/policies' });
     },
   onHeroAssistCardClick: function(ev) {
-     my.alert({
-      title: 'This would initiate a call for the user.',
-      content: 'This would initiate a call for the user.',
-      buttonText: 'Call',
-      success: () => {
-        
-      }
-    });
+    my.makePhoneCall({ number: '+27832277135' });
   },
   onDialATeacherCardClick: function(ev) {
-    my.alert({
-      title: 'This would initiate a call for the user.',
-      content: 'This would initiate a call for the user.',
-      buttonText: 'Call',
-      success: () => {
-        
-      }
-    });
-    },
+    my.makePhoneCall({ number: '+27832277135' }); 
+  },
   onClickHomeIcon() {
     my.navigateTo({ url: '../landing/landing' });
   }

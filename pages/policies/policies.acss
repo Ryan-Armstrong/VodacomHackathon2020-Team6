@@ -36,7 +36,7 @@
   flex-grow: 1;
   font-size: 34rpx;
   color: white;
-  background-color: lightgrey;
+  background-color: #f4f4f4;
   overflow: auto;
 }
 
@@ -46,7 +46,7 @@
   display: grid;
   height: 100%;
   flex: 50%;
-  padding: 0rpx 20rpx 20rpx;
+  padding: 0rpx 20rpx;
   justify-items: center;
 }
 
@@ -83,6 +83,61 @@
   margin: 20rpx 24rpx 0rpx 24rpx;
   align-items: center;
 }
+
+.hero-assistance-card {
+  display: inline-block;
+  width: 3.367rem;
+  height: 1.83rem;
+  padding-top: 0.36rem;
+  box-shadow: -4px 4px 2px grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: white;
+  background-image: url('/assets/batman.png');
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+}
+
+.hero-assistance-card-disabled {
+  display: inline-block;
+  width: 3.367rem;
+  height: 1.83rem;
+  padding-top: 0.36rem;
+  box-shadow: -4px 4px 2px grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: grey;
+  background-image: url('/assets/batman.png');
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+  opacity: 0.4;
+
+}
+
+.full-width {
+  width: 100%;
+  position: relative;
+  left: -0.25rem;
+}
+
+.disabled {
+  width: 100%;
+  position: relative;
+  left: -0.25rem;
+  opacity: 0.4;
+}
+
+
+
+
 /*
 .am-card-content {
   min-width: 90%;
@@ -111,4 +166,14 @@
 
 .am-footer {
   background-color: black;
+}
+
+.addPolicyButton {
+  background-color: black;
+  position: relative;
+  bottom: 0.1rem;
+  left: 6.2rem;
+  color: white;
+  border-color: black;
+  height: 100%;
 }
