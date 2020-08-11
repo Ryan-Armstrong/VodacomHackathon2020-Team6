@@ -8,23 +8,36 @@
   <view class="content">
     <view class="row">
       <view class="column">
+        <view a:if="{{user.policies.includes('heroAssistance')}}">
+          <button type="default"  class="hero-assistance-card" onTap="onHeroAssistCardClick">
+              Call a Hero
+          </button>
+        </view>
+        <view a:else>
+          <button type="default"  class="hero-assistance-card-disabled" onTap="">
+              Call a Hero
+          </button>
+        </view>
         
-        <card
-          thumb="{{thumb}}"
-          title="Get Hero Assistance Immediately"
-          footer="Make this a round button. "
-          onClick="onHeroAssistCardClick"
-          info="Click the card"
-        />
+        <view a:if="{{user.policies.includes('dialATeacher')}}">
+          <card
+            thumb="{{thumb}}"
+            title="Dial A Teacher"
+            footer="School is tough enough without the distance."
+            onClick="onDialATeacherCardClick"
+            info="Click the card"
+          />
+        </view>
+        <view a:else class="disabled">
+          <card
+            thumb="{{thumb}}"
+            title="Dial A Teacher"
+            footer="School is tough enough without the distance."
+            info="Click the card"
+          />
+        </view>
+        
 
-        <card
-          thumb="{{thumb}}"
-          title="Dial A Teacher"
-          footer="School is tough enough without the distance."
-          onClick="onDialATeacherCardClick"
-          info="Click the card"
-            
-        />
 
         <card
           title="Make A Claim"
@@ -36,7 +49,7 @@
 
         <card
           thumb="{{thumb}}"
-          title="Policies"
+          title="Your Policies"
           footer="Insurance for your mobile devices"
           onClick="onPoliciesCardClick"
           info="You have signed your life away."

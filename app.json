@@ -5,7 +5,8 @@
     "pages/policies/policies",
     "pages/heroAssist/heroAssist",
     "pages/dialATeacher/dialATeacher",
-    "pages/confirmClaim/confirmClaim"
+    "pages/confirmClaim/confirmClaim",
+    "pages/addPolicies/addPolicies"
   ],
   "window": {
     "defaultTitle": "Todo App",
