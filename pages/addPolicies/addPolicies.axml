@@ -3,15 +3,12 @@
   <view class="header">
     <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
     <!-- <view class="header-text">Profile</view> -->
-    <button type="default"  class="addPolicyButton" onTap="addPolicyButton">
-              +
-          </button>
   </view>
 
   <view class="content">
     <view class="row">
       <view class="column">
-        <view a:if="{{user.policies.includes('deviceInsurance')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('deviceInsurance')}}" class="full-width">
           <card
           thumb="{{thumb}}"
           title="Device Insurance"
@@ -21,7 +18,7 @@
         />
         </view>
         
-        <view a:if="{{user.policies.includes('funeralCover')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('funeralCover')}}" class="full-width">
           <card
           thumb="{{thumb}}"
           title="Funeral Cover"
@@ -31,7 +28,7 @@
         />
         </view>
 
-        <view a:if="{{user.policies.includes('lifeCover')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('lifeCover')}}" class="full-width">
           <card
             thumb="{{thumb}}"
             title="Life Cover"
@@ -41,7 +38,7 @@
           /> 
         </view>
 
-        <view a:if="{{user.policies.includes('legalCover')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('legalCover')}}" class="full-width">
           <card
             thumb="{{thumb}}"
             title="Legal Cover"
@@ -51,7 +48,7 @@
           />     
         </view>
             
-        <view a:if="{{user.policies.includes('heroAssistance')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('heroAssistance')}}" class="full-width">
           <card
             thumb="{{thumb}}"
             title="Hero Assistance"
@@ -61,7 +58,7 @@
           />
         </view>
 
-        <view a:if="{{user.policies.includes('dialATeacher')}}" class="full-width">
+        <view a:if="{{!user.policies.includes('dialATeacher')}}" class="full-width">
           <card
             thumb="{{thumb}}"
             title="Dial A Teacher"
