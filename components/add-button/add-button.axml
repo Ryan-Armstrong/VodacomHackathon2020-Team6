@@ -1,0 +1,3 @@
+<button class="add-button" hover-class="none" onTap="onClickMe">
+    <text>{{text}}</text>
+</button>

@@ -1,0 +1,6 @@
+App({
+  claim:
+  {
+    device: ''
+  }
+});

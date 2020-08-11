@@ -1,0 +1,71 @@
+<view class="container">
+
+  <view class="header">
+    <image onClickMe="onClickHomeIcon" class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+    <!-- <view class="header-text">Profile</view> -->
+  </view>
+
+  <view class="content">
+    <view class="row">
+      <view class="column">
+        
+        <card
+          thumb="{{thumb}}"
+          title="Get Hero Assistance Immediately"
+          footer="Make this a round button. "
+          onClick="onHeroAssistCardClick"
+          info="Click the card"
+        />
+
+        <card
+          thumb="{{thumb}}"
+          title="Dial A Teacher"
+          footer="School is tough enough without the distance."
+          onClick="onDialATeacherCardClick"
+          info="Click the card"
+            
+        />
+
+        <card
+          title="Make A Claim"
+          footer="Make a claim here to get your valuables back ASAP."
+          onClick="onMakeClaimCardClick"
+          info="Your premium is gonna go up."
+          thumb="{{thumb}}"
+        />
+
+        <card
+          thumb="{{thumb}}"
+          title="Policies"
+          footer="Insurance for your mobile devices"
+          onClick="onPoliciesCardClick"
+          info="You have signed your life away."
+        />
+        
+      </view>
+    </view>
+  </view>
+
+
+
+<!-- <view>
+  <calendar
+    type="single"
+    tagData="{{tagData}}"
+    onSelect="handleSelect" />
+</view> -->
+
+
+
+
+
+<!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
+
+
+<view>
+  <footer
+    copyright="{{copyright}}"
+    links="{{links}}" />
+</view>
+
+</view>

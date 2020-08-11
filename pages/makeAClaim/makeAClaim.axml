@@ -1,0 +1,45 @@
+<view class="container">
+
+  <view class="header">
+    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+  </view>
+
+  <view class="content">
+    
+    <view class="content-box">
+      <form class="makeAClaimForm" onSubmit="formSubmit" onReset="formReset">
+        <view class="column">
+          <view class="row">
+            <view> Make A Claim </view>
+          </view>
+          <view class="row">
+            <view> For what device are you making a claim? </view>
+          </view>
+          <view class="row">
+            <picker onChange="bindObjPickerChange" value="{{arrIndex}}" range="{{objectArray}}" range-key="name">
+              <view class="row-flex">
+                <view class="row-title">Claim</view>
+                <view class="row-extra">Current selection:{{objectArray[arrIndex].name}}</view>
+              </view>
+            </picker>
+          </view>
+          <view class="forceButtonsBottom">
+            <view class="btn-area">
+              <button class="submitResetButton" formType="submit">Submit</button>
+              <button class="submitResetButton" formType="reset">Reset</button>
+            </view>  
+          </view>
+        </view>
+      </form>
+    </view>
+
+
+  </view>
+
+  <view>
+    <footer
+      copyright="{{copyright}}"
+      links="{{links}}" />
+  </view>
+
+</view>
