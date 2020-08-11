@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/landing/landing",
+    "pages/makeAClaim/makeAClaim",
+    "pages/policies/policies",
+    "pages/heroAssist/heroAssist",
+    "pages/dialATeacher/dialATeacher",
+    "pages/confirmClaim/confirmClaim"
+  ],
+  "window": {
+    "defaultTitle": "Todo App",
+    "titleBarColor": "#323239"
+  }
+}
