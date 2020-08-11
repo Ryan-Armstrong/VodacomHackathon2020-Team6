@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class="header">
+    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+  </view>
+
+  <view class="content">
+    
+    <view class="content-box">
+    </view>
+
+
+  </view>
+
+  <view>
+    <footer
+      copyright="{{copyright}}"
+      links="{{links}}" />
+  </view>
+
+</view>
