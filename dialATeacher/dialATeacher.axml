@@ -1,0 +1,17 @@
+<view class="container">
+
+  <view class="header">
+    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+  </view>
+
+  <view class="content">
+    dial A Teacher
+  </view>
+
+  <view>
+    <footer
+      copyright="{{copyright}}"
+      links="{{links}}" />
+  </view>
+
+</view>

@@ -35,4 +35,7 @@ Page({
   onDialATeacherCardClick: function(ev) {
     my.navigateTo({ url: '../dialATeacher/dialATeacher' });
     },
+  addPolicyButton: function(ev) {
+    my.navigateTo({ url: '../addPolicies/addPolicies' });
+    },
 });
