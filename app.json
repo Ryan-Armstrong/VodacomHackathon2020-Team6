@@ -6,7 +6,11 @@
     "pages/heroAssist/heroAssist",
     "pages/dialATeacher/dialATeacher",
     "pages/confirmClaim/confirmClaim",
-    "pages/addPolicies/addPolicies"
+    "pages/addPolicies/addPolicies",
+    "pages/deviceInsurance/deviceInsurance",
+    "pages/funeralCover/funeralCover",
+    "pages/legalCover/legalCover",
+    "pages/lifeCover/lifeCover"
   ],
   "window": {
     "defaultTitle": "Todo App",

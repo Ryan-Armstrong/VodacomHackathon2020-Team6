@@ -13,8 +13,18 @@
             <view> Your Claim </view>
           </view>
           <view class="row">
-            <view> Your device: {{device}}</view>
+            <view> Your device: {{deviceSelection}}</view>
           </view>
+          <view class="row">
+            <view> Claimant: {{owner}}</view>
+          </view>
+          <view class="row">
+            <view> Claim Details: </view>
+          </view>
+          <view class="row claimDescription">
+            {{description}}
+          </view>
+          
           <view class="forceButtonsBottom">
             <view class="btn-area">
               <button class="submitResetButton" formType="submit">Submit</button>
