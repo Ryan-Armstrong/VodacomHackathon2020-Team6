@@ -89,5 +89,8 @@ Page({
   },
   onClickHomeIcon() {
     my.navigateTo({ url: '../landing/landing' });
+  },
+  onAccountCardClick() {
+    my.navigateTo({ url: '../account/account' });
   }
 });

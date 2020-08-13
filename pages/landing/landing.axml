@@ -54,6 +54,14 @@
           onClick="onPoliciesCardClick"
           info="You have signed your life away."
         />
+
+        <card
+          thumb="{{thumb}}"
+          title="Your Account"
+          footer="View your details"
+          onClick="onAccountCardClick"
+          info="Account things."
+        />
         
       </view>
     </view>

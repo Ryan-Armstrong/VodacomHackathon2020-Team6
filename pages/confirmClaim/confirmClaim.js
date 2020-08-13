@@ -36,7 +36,6 @@ Page({
   },
   onModalClick() {
     app.user.claim.date = Date();
-    debugger
     this.setData({
       modalOpened: false,
     });
