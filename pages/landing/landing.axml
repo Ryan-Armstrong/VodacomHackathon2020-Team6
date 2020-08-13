@@ -19,14 +19,14 @@
           </button>
         </view>
         
-        <view a:if="{{user.policies.includes('dialATeacher')}}">
-          <card
-            thumb="{{thumb}}"
-            title="Dial A Teacher"
-            footer="School is tough enough without the distance."
-            onClick="onDialATeacherCardClick"
-            info="Click the card"
-          />
+        <view a:if="{{user.policies.includes('dialATeacher')}}" class="full-width">
+            <card
+              thumb="{{thumb}}"
+              title="Dial A Teacher"
+              footer="School is tough enough without the distance."
+              onClick="onDialATeacherCardClick"
+              info="Click the card"
+            />    
         </view>
         <view a:else class="disabled">
           <card

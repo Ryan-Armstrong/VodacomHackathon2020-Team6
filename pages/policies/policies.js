@@ -29,9 +29,8 @@ Page({
   onLegalCoverCardClick: function(ev) {
     my.navigateTo({ url: '../legalCover/legalCover' });
     },
-  
   onHeroAssistCardClick: function(ev) {
-     my.navigateTo({ url: '../legalCover/legalCover' });
+     my.navigateTo({ url: '../heroAssist/heroAssist' });
   },
   onDialATeacherCardClick: function(ev) {
     my.navigateTo({ url: '../dialATeacher/dialATeacher' });
