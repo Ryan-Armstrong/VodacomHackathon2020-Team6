@@ -10,10 +10,11 @@
     "pages/deviceInsurance/deviceInsurance",
     "pages/funeralCover/funeralCover",
     "pages/legalCover/legalCover",
-    "pages/lifeCover/lifeCover"
+    "pages/lifeCover/lifeCover",
+    "pages/account/account"
   ],
   "window": {
-    "defaultTitle": "Todo App",
+    "defaultTitle": "Todo",
     "titleBarColor": "#323239"
   }
 }

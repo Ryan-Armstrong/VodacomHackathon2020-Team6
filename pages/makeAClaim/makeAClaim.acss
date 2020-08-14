@@ -60,7 +60,6 @@
 .row-flex {
   width: calc(100% - 40rpx);
   margin: 10rpx 20rpx 0rpx;
-  background-color: grey;
 }
 
 /* .row:after {
@@ -163,6 +162,6 @@
 
 .forceButtonsBottom {
   position: relative;
-  top: 7rem;
+  top: 4.5rem;
   text-align: center;
 }
