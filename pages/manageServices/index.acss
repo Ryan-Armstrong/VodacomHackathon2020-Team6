@@ -1,0 +1,168 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-shrink: 0;
+  color: #FFF;
+  background-color: black;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 2px solid red;
+}
+
+.nav-icon {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 0rpx 10rpx 0rpx 10rpx;
+  display: inline-block
+}
+
+.header-text {
+  /* padding-top: 22rpx; */
+  font-size: 30rpx;
+  font-weight: 100;
+  margin-right: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 34rpx;
+  color: white;
+  background-color: #f4f4f4;
+  overflow: auto;
+}
+
+.column {
+  /* float: left;
+  width: 50%; */
+  display: grid;
+  height: 100%;
+  flex: 50%;
+  padding: 0rpx 20rpx;
+  justify-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.footer {
+  flex-shrink: 0;
+  font-size: 48rpx;
+  font-weight: 200;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.am-card {
+  width: 90%;
+  box-shadow: -4px 4px 2px #DDDDDD;
+  /* border: 1px solid lightslategrey; */
+  border-radius: 5px;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+}
+
+.hero-assistance-card {
+  display: inline-block;
+  width: 3.367rem;
+  height: 1.83rem;
+  padding-top: 0.36rem;
+  box-shadow: -4px 4px 2px grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: white;
+  background-image: url('/assets/batman.png');
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+}
+
+.hero-assistance-card-disabled {
+  display: inline-block;
+  width: 3.367rem;
+  height: 1.83rem;
+  padding-top: 0.36rem;
+  box-shadow: -4px 4px 2px grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: grey;
+  background-image: url('/assets/batman.png');
+  background-size: 105%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: red;
+  opacity: 0.4;
+
+}
+
+.disabled {
+  width: 100%;
+  position: relative;
+  left: -0.25rem;
+  opacity: 0.4;
+}
+
+
+
+
+/*
+.am-card-content {
+  min-width: 90%;
+}
+
+.am-card-arrow {
+  width: 0px;
+  height: 0px;
+}
+
+
+.am-card-title {
+  text-align: center;
+}
+.am-card-body {
+} */
+
+.am-card-thumb {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.am-card-footer {
+  border-top: 1px solid rgb(208,208,208);
+  font-weight: bold;
+  color: black;
+}
+
+.am-footer {
+  background-color: black;
+}

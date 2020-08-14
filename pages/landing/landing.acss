@@ -41,13 +41,14 @@
 }
 
 .column {
-  /* float: left;
-  width: 50%; */
+  float: left;
+  width: 50%;
   display: grid;
   height: 100%;
   flex: 50%;
   padding: 0rpx 20rpx;
   justify-items: center;
+  overflow: auto;
 }
 
 .row {
@@ -73,15 +74,6 @@
   align-items: center;
   height: 100%;
   background-color: lightgray;
-}
-
-.am-card {
-  width: 90%;
-  box-shadow: -4px 4px 2px grey;
-  border: 1px solid lightslategrey;
-  border-radius: 4px;
-  margin: 20rpx 24rpx 0rpx 24rpx;
-  align-items: center;
 }
 
 .hero-assistance-card {
@@ -127,31 +119,6 @@
   position: relative;
   left: -0.25rem;
   opacity: 0.4;
-}
-
-
-
-
-/*
-.am-card-content {
-  min-width: 90%;
-}
-
-.am-card-arrow {
-  width: 0px;
-  height: 0px;
-}
-
-
-.am-card-title {
-  text-align: center;
-}
-.am-card-body {
-} */
-
-.am-card-thumb {
-  width: 48rpx;
-  height: 48rpx;
 }
 
 .am-card-footer {

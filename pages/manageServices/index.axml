@@ -1,0 +1,76 @@
+<view class="container">
+
+  <!-- <view class="header">
+    <image onClickMe="onClickHomeIcon" class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+    <view class="header-text">Profile</view>
+  </view> -->
+
+  <view class="content">
+    <view class="row">
+      <view class="column">
+        
+        <custom-card a:if="{{user.policies.includes('heroAssistance')}}"
+          thumb="{{hero}}"
+          title="Vodacom Hero Assist"
+          subTitle="Exclusive emergency service for Vodacom contract customers."
+          footer="R69/month"
+          cardAction = "DEACTIVATE"
+          onClick="onDialATeacherCardClick"
+          info="Click the card"
+        />  
+        <custom-card a:else class="disabled"
+          thumb="{{hero}}"
+          title="Vodacom Hero Assist"
+          subTitle="Exclusive emergency service for Vodacom contract customers."
+          footer="R69/month"
+          cardAction = "ACTIVATE"
+          info="Click the card"
+        />
+
+        <custom-card a:if="{{user.policies.includes('dialATeacher')}}"
+          thumb="{{phone}}"
+          title="Dial-a-teacher"
+          subTitle="School is tough enough without the distance."
+          footer="R46/month"
+          cardAction = "DEACTIVATE"
+          onClick="onDialATeacherCardClick"
+          info="Click the card"
+        />  
+        <custom-card a:else
+          thumb="{{phone}}"
+          title="Dial A Teacher"
+          subTitle="School is tough enough without the distance."
+          footer="R46/month"
+          cardAction = "ACTIVATE"
+          info="Click the card"
+        />             
+
+
+        <custom-card
+          title="Make A Claim"
+          subTitle="Make a claim here to get your valuables back ASAP."
+          onClick="onMakeClaimCardClick"
+          info="Your premium is gonna go up."
+          thumb="{{device}}"
+        />
+
+        <custom-card
+          thumb="{{suitcase}}"
+          title="Your Policies"
+          subTitle="Insurance for your mobile devices"
+          onClick="onPoliciesCardClick"
+          info="You have signed your life away."
+        />
+        
+      </view>
+    </view>
+  </view>
+
+
+<view class="footer">
+  <footer
+    copyright="{{copyright}}"
+    links="{{links}}" />
+</view>
+
+</view>

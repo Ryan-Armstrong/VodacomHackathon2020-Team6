@@ -21,7 +21,7 @@
         
         <view a:if="{{user.policies.includes('dialATeacher')}}">
           <card
-            thumb="{{thumb}}"
+            thumb="{{phone}}"
             title="Dial A Teacher"
             footer="School is tough enough without the distance."
             onClick="onDialATeacherCardClick"
@@ -30,7 +30,7 @@
         </view>
         <view a:else class="disabled">
           <card
-            thumb="{{thumb}}"
+            thumb="{{phone}}"
             title="Dial A Teacher"
             footer="School is tough enough without the distance."
             info="Click the card"
@@ -39,20 +39,26 @@
         
 
 
-        <card
-          title="Make A Claim"
+        <custom-card
+          title="Claim"
           footer="Make a claim here to get your valuables back ASAP."
           onClick="onMakeClaimCardClick"
           info="Your premium is gonna go up."
-          thumb="{{thumb}}"
+          thumb="{{device}}"
         />
 
-        <card
-          thumb="{{thumb}}"
+        <custom-card
+          thumb="{{suitcase}}"
           title="Your Policies"
           footer="Insurance for your mobile devices"
           onClick="onPoliciesCardClick"
           info="You have signed your life away."
+        />
+
+        <custom-card
+          thumb="{{suitcase}}"
+          title="Manage Services"
+          onClick="onManageServicesCardClick"          
         />
         
       </view>
@@ -75,7 +81,7 @@
 <!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
 
 
-<view>
+<view class="footer">
   <footer
     copyright="{{copyright}}"
     links="{{links}}" />

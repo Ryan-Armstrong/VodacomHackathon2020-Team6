@@ -10,10 +10,16 @@ Page({
     ],
     copyright: '© 2004-2017 *.com. All rights reserved.',
     links: [
-      { text: 'Landing Page', url: '../../landing/landing' },
-      { text: 'Other Landing Page', url: '../../landing/landing' },
+      { text: 'Landing Page', url: '../landing/landing' },
+      { text: 'Other Landing Page', url: '../landing/landing' },
     ],
-    thumb: '../../assets/vodalogo.png',
+    logo: '../../assets/vodalogo.png',
+    device: '../../assets/device.png',
+    phone: '../../assets/phonne.png',
+    family: '../../assets/family.png',
+    phone: '../../assets/phone.png',
+    shield: '../../assets/shield.png',
+    suitcase: '../../assets/suitcase.png',
     user:
     {
       policies: [],
@@ -79,5 +85,9 @@ Page({
   },
   onClickHomeIcon() {
     my.navigateTo({ url: '../landing/landing' });
+  },
+
+  onManageServicesCardClick(){
+    my.navigateTo( {url: "../manageServices/index"})
   }
 });

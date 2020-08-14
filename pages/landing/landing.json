@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "add-button": "/components/add-button/add-button",
+        "custom-card": "/components/landing-page-card/index",
         "list": "mini-antui/es/list/index",
         "list-item": "mini-antui/es/list/list-item/index",
         "tabs": "mini-antui/es/tabs/index",

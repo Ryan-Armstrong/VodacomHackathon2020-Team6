@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/landing/landing",
+    "pages/manageServices/index",
     "pages/makeAClaim/makeAClaim",
     "pages/policies/policies",
     "pages/heroAssist/heroAssist",
@@ -13,7 +14,7 @@
     "pages/lifeCover/lifeCover"
   ],
   "window": {
-    "defaultTitle": "Todo App",
-    "titleBarColor": "#323239"
+    "defaultTitle": "Vodasure",
+    "titleBarColor": "#e60000"
   }
 }
