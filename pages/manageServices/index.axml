@@ -15,8 +15,8 @@
           subTitle="Exclusive emergency service for Vodacom contract customers."
           footer="R69/month"
           cardAction = "DEACTIVATE"
-          onClick="onDialATeacherCardClick"
-          info="Click the card"
+          onClick="onHeroAssistCardClick"
+          info="DEACTIVATE"
         />  
         <custom-card a:else class="disabled"
           thumb="{{hero}}"
@@ -24,7 +24,8 @@
           subTitle="Exclusive emergency service for Vodacom contract customers."
           footer="R69/month"
           cardAction = "ACTIVATE"
-          info="Click the card"
+          onClick="onHeroAssistCardClick"
+          info="ACTIVATE"
         />
 
         <custom-card a:if="{{user.policies.includes('dialATeacher')}}"
@@ -34,7 +35,7 @@
           footer="R46/month"
           cardAction = "DEACTIVATE"
           onClick="onDialATeacherCardClick"
-          info="Click the card"
+          info="DEACTIVATE"
         />  
         <custom-card a:else
           thumb="{{phone}}"
@@ -42,11 +43,12 @@
           subTitle="School is tough enough without the distance."
           footer="R46/month"
           cardAction = "ACTIVATE"
-          info="Click the card"
+          onClick="onDialATeacherCardClick"
+          info="ACTIVATE"
         />             
 
 
-        <custom-card
+        <!-- <custom-card
           title="Make A Claim"
           subTitle="Make a claim here to get your valuables back ASAP."
           onClick="onMakeClaimCardClick"
@@ -60,7 +62,7 @@
           subTitle="Insurance for your mobile devices"
           onClick="onPoliciesCardClick"
           info="You have signed your life away."
-        />
+        /> -->
         
       </view>
     </view>

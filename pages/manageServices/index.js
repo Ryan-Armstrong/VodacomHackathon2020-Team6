@@ -80,7 +80,7 @@ Page({
     my.navigateTo({ url: '../policies/policies' });
     },
   onHeroAssistCardClick: function(ev) {
-    my.makePhoneCall({ number: '+27832277135' });
+     my.navigateTo({ url: '../activateVAS/index' });
   },
   onDialATeacherCardClick: function(ev) {
     my.makePhoneCall({ number: '+27832277135' }); 
