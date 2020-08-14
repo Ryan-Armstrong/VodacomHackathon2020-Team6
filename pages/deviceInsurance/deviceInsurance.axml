@@ -1,3 +1,98 @@
+<view class="container">
+
+  <view class="header">
+    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
+    <!-- <view class="header-text">Profile</view> -->
+  </view>
+
+  <view class="content">
+    <view class="content-box">
+      <view class="column">
+        <view class="row">
+          Device Insurance
+        </view>
+        <view class="row-flex">
+          <view class="row-title">Date of Commencement</view>
+          <view class="row-extra">{{deviceInsurance.startDate}}</view>
+        </view>
+        <view class="row">
+          Devices
+        </view>
+        <view a:for="{{leng}}" a:for-item="i" class="row-flex">
+          <view class="row-title">{{deviceInsurance.devices.dependents[i]}}</view>
+          <view class="row-extra">{{deviceInsurance.devices.models[i].model}}</view>
+        </view>
+        <view class="forceButtonsBottom">
+          <view class="btn-area">
+            <button class="submitResetButton" onTap="openAddModal">Add Device</button>
+            <button class="submitResetButton" onTap="openRemoveModal">Remove Device</button>
+          </view>  
+        </view>
+      </view>
+    </view> 
+  </view>
+
+
+  <view>
+  <modal
+    show="{{modalAddOpened}}"
+    onModalClick="onModalAddClick"
+    onModalClose="onModalAddClose"
+    topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+  >
+    <view slot="header">Add Device</view>
+    <form onSubmit="formAddSubmit" onReset="formAddReset">
+      <view class="row">
+        Device Owner: <input placeholder="Input" />
+      </view>
+      <view class="row">
+        Device Model: <input placeholder="Input" />
+      </view>
+      <view class="row">
+        Device Number: <input placeholder="Input" />
+      </view>
+      <view class="btn-area">
+        <button formType="submit">Submit</button>
+        <button formType="reset">Reset</button>
+      </view>
+    </form>
+  </modal>
+</view>
+
+  <view>
+  <modal
+    show="{{modalRemoveOpened}}"
+    onModalClick="onModalRemoveClick"
+    onModalClose="onModalRemoveClose"
+    topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+  >
+    <view slot="header">Remove Device</view>
+    <form onSubmit="formRemoveSubmit" onReset="formRemoveReset">
+      <view a:for="{{leng}}" a:for-item="i" class="row-flex-modal">
+        <view class="row-title-modal">{{deviceInsurance.devices.dependents[i]}}</view>
+        <view class="row-extra-modal">{{deviceInsurance.devices.models[i].model}}</view>
+        <radio-group name="radio-group">
+          <label><radio value="{{i}}"/></label>
+        </radio-group>
+      </view>
+      <view class="btn-area">
+        <button formType="submit">Submit</button>
+        <button formType="reset">Reset</button>
+      </view>
+      </form>
+  </modal>
+</view>
+
+
+
+
+<!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
+
+
 <view>
-  New Page
+  <footer
+    copyright="{{copyright}}"
+    links="{{links}}" />
+</view>
+
 </view>
