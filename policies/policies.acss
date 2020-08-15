@@ -46,7 +46,7 @@
   display: grid;
   height: 100%;
   flex: 50%;
-  padding: 0rpx 20rpx;
+  padding: 0rpx 20rpx 20rpx;
   justify-items: center;
 }
 

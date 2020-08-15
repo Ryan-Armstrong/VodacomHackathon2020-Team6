@@ -1,7 +1,7 @@
 App({
   user:
   {
-    policies: ['heroAssistance', 'deviceInsurance', 'funeralCover'],
+    policies: [],
     heroAssistance: {
       startDate: '2020-08-14',
     },
@@ -23,21 +23,42 @@ App({
     },
     funeralCover: {
       startDate: '2020-08-14',
-      coverPerMember: [
-        {"Michael": '50000'}, {"Pietie": '45000'}
-      ]
+      cover: [
+          "50 000",
+          "45 000"
+        ],
+        dependents: [
+          "Michael", "Pietie"
+        ],
+        age: [
+          "26", "22"
+        ]
     },
     lifeCover: {
       startDate: '2020-08-14',
-      coverPerMember: [
-        {"Michael": '500000'}, {"Pietie": '450000'}
-      ]
+      cover: [
+          "500 000",
+          "450 000"
+        ],
+        dependents: [
+          "Michael", "Pietie"
+        ],
+        age: [
+          "26", "22"
+        ]
     },
     legalCover: {
       startDate: '2020-08-14',
-      coverPerMember: [
-        {"Michael": '300000'}, {"Pietie": '250000'}
-      ]
+      cover: [
+          "300 000",
+          "250 000"
+        ],
+        dependents: [
+          "Michael", "Pietie"
+        ],
+        age: [
+          "26", "22"
+        ]
     },
     dialATeacher: {
       startDate: '2020-08-14',

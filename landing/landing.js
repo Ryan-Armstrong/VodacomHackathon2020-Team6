@@ -72,12 +72,25 @@ Page({
     my.navigateTo({ url: '../policies/policies' });
     },
   onHeroAssistCardClick: function(ev) {
-    my.makePhoneCall({ number: '+27832277135' });
+    // my.makePhoneCall({ number: '+27XXXXXXXXX' });
+    my.alert({
+      title: 'Call',
+      content: 'This would make a call.',
+      buttonText: 'Call'
+    });
   },
   onDialATeacherCardClick: function(ev) {
-    my.makePhoneCall({ number: '+27832277135' }); 
+    // my.makePhoneCall({ number: '+27XXXXXXXXX' }); 
+    my.alert({
+      title: 'Call',
+      content: 'This would make a call.',
+      buttonText: 'Call'
+    });
   },
   onClickHomeIcon() {
     my.navigateTo({ url: '../landing/landing' });
+  },
+  onAccountCardClick() {
+    my.navigateTo({ url: '../account/account' });
   }
 });

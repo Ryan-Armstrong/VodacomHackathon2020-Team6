@@ -7,12 +7,27 @@ Page({
       { text: 'Landing Page', url: '../../landing/landing' },
       { text: 'Other Landing Page', url: '../../landing/landing' },
     ],
-    device: '',
-    modalOpened: false,
+    arrDeviceIndex: '',
+    arrCoverIndex: '',
+    coverSelection: '',
+    deviceSelection: '',
+    owner: '',
+    description: '',
+    index: 0,
+    user:{
+      claim:
+      {
+        device: '',
+        date: ''
+      }
+    },
+    modalOpened: false
   },
+
   onLoad() {
-    this.device = app.claim.device;
-    this.setData({device: app.claim.device});
+    this.data.deviceSelection = app.user.claim.device;
+    this.data.owner = app.user.claim.owner;
+    this.data.description = app.user.claim.description;
   },
   openModal() {
     this.setData({
@@ -20,6 +35,7 @@ Page({
     });
   },
   onModalClick() {
+    app.user.claim.date = Date();
     this.setData({
       modalOpened: false,
     });

@@ -9,5 +9,6 @@
         "card": "mini-antui/es/card/index",
         "grid": "mini-antui/es/grid/index",
         "footer": "mini-antui/es/footer/index"
-    }
+    },
+   "defaultTitle": "Policies"
 }

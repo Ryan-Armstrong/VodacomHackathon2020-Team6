@@ -14,7 +14,7 @@
     "pages/account/account"
   ],
   "window": {
-    "defaultTitle": "Todo",
+    "defaultTitle": "VodaSure",
     "titleBarColor": "#323239"
   }
 }
