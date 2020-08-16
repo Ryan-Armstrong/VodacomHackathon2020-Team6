@@ -36,6 +36,11 @@ Page({
   },
   onModalClick() {
     app.user.claim.date = Date();
+    app.user.claims.push(app.user.claim)
+    app.user.claim.date = '';
+    app.user.claim.device = '';
+    app.user.claim.owner = '';
+    app.user.claim.description = '';
     this.setData({
       modalOpened: false,
     });

@@ -1,14 +1,10 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-  </view>
-
   <view class="content">
     <view class="content-box">
       <view class="column">
         <view a:if="{{user.policies.includes('heroAssistance')}}" class="full-width">
-          <view class="row">
+          <view class="content-header">
             Dial A Teacher
           </view>
           <view class="row-flex">

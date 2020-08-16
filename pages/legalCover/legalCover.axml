@@ -1,22 +1,17 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-    <!-- <view class="header-text">Profile</view> -->
-  </view>
-
   <view class="content">
     <view class="content-box">
       <view class="column">
         <view a:if="{{user.policies.includes('legalCover')}}" class="full-width">
-          <view class="row">
-            Funeral Cover
+          <view class="content-header">
+            Legal Cover
           </view>
           <view class="row-flex">
             <view class="row-title">Date of Commencement</view>
             <view class="row-extra">{{legalCover.startDate}}</view>
           </view>
-          <view class="row">
+          <view class="content-middle">
             Dependents
           </view>
           <view a:for="{{leng}}" a:for-item="i" class="row-flex">

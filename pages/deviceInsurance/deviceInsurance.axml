@@ -1,22 +1,17 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-    <!-- <view class="header-text">Profile</view> -->
-  </view>
-
   <view class="content">
     <view class="content-box">
       <view a:if="{{user.policies.includes('deviceInsurance')}}" class="full-width">
         <view class="column">
-          <view class="row">
+          <view class="content-header">
             Device Insurance
           </view>
           <view class="row-flex">
             <view class="row-title">Date of Commencement</view>
             <view class="row-extra">{{deviceInsurance.startDate}}</view>
           </view>
-          <view class="row">
+          <view class="content-middle">
             Devices
           </view>
           <view a:for="{{leng}}" a:for-item="i" class="row-flex">

@@ -12,7 +12,7 @@
         
         <view a:if="{{user.policies.includes('dialATeacher')}}" class="full-width">
             <card
-              thumb="{{'../assets/redPhoneOutline.png'}}"
+              thumb="{{'/assets/redPhoneOutline.png'}}"
               title="Dial A Teacher"
               footer="School is tough enough without the distance."
               onClick="onDialATeacherCardClick"
