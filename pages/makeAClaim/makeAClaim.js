@@ -56,16 +56,16 @@ Page({
     console.log('form has a reset event')
   },
   bindKeyInput: function(e) {
-    debugger
+    
     console.log('form has a submit event, carrying data ', e.detail.value)
   },
   contactConsultantFromFuneralCover: function(e) {
-    debugger
+    
   },
   contactConsultantFromLifeCover: function(e) {
-    debugger
+    
   },
   contactConsultantFromLegalCover: function(e) {
-    debugger
+    
   },
 });

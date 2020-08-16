@@ -1,7 +1,7 @@
 App({
   user:
   {
-    policies: [],
+    policies: ['heroAssistance', 'deviceInsurance'],
     heroAssistance: {
       startDate: '2020-08-14',
     },

@@ -85,7 +85,7 @@
 }
 
 .am-card {
-  width: 90%;
+  /* width: 90%; */
   box-shadow: -4px 4px 2px grey;
   border: 1px solid lightslategrey;
   border-radius: 4px;
@@ -124,12 +124,12 @@
 
 .content-box {
   display: flex;
-  margin: auto;
+  margin: 0.35rem;
   align-items: center;
   vertical-align: middle;
   /* height: 1000rpx; */
   /* width: 720rpx; */
-  height: 95%;
+  height: 12.5rem;
   width: 90%;
   background-color: white;
   border: 2rpx solid grey;

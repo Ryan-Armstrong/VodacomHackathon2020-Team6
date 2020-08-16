@@ -108,6 +108,8 @@
 
 .am-card {
   width: 90%;
+  position: relative;
+  left: -0.25rem;
   box-shadow: -4px 4px 2px grey;
   border: 1px solid lightslategrey;
   border-radius: 4px;
@@ -155,8 +157,8 @@
 
 .full-width {
   width: 100%;
-  position: relative;
-  left: -0.25rem;
+  /* position: relative; */
+  /* left: -0.25rem; */
 }
 
 .disabled {

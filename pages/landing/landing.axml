@@ -1,27 +1,18 @@
 <view class="container">
 
-  <view class="header">
-    <image onClickMe="onClickHomeIcon" class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-    <!-- <view class="header-text">Profile</view> -->
-  </view>
-
   <view class="content">
     <view class="row">
       <view class="column">
         <view a:if="{{user.policies.includes('heroAssistance')}}">
-          <button type="default"  class="hero-assistance-card" onTap="onHeroAssistCardClick">
-              Call a Hero
-          </button>
+          <button type="default"  class="hero-assistance-card" onTap="onHeroAssistCardClick"></button>
         </view>
         <view a:else>
-          <button type="default"  class="hero-assistance-card-disabled" onTap="">
-              Call a Hero
-          </button>
+          <button type="default"  class="hero-assistance-card-disabled" onTap=""></button>
         </view>
         
         <view a:if="{{user.policies.includes('dialATeacher')}}" class="full-width">
             <card
-              thumb="{{thumb}}"
+              thumb="{{'../assets/redPhoneOutline.png'}}"
               title="Dial A Teacher"
               footer="School is tough enough without the distance."
               onClick="onDialATeacherCardClick"
@@ -30,7 +21,7 @@
         </view>
         <view a:else class="disabled">
           <card
-            thumb="{{thumb}}"
+            thumb="{{'/assets/redPhoneOutline.png'}}"
             title="Dial A Teacher"
             footer="School is tough enough without the distance."
             info="Click the card"
@@ -44,11 +35,11 @@
           footer="Make a claim here to get your valuables back ASAP."
           onClick="onMakeClaimCardClick"
           info="Your premium is gonna go up."
-          thumb="{{thumb}}"
+          thumb="{{'/assets/policies.png'}}"
         />
 
         <card
-          thumb="{{thumb}}"
+          thumb="{{'/assets/document.png'}}"
           title="Your Policies"
           footer="Insurance for your mobile devices"
           onClick="onPoliciesCardClick"
@@ -56,7 +47,7 @@
         />
 
         <card
-          thumb="{{thumb}}"
+          thumb="{{'/assets/profileOutline.png'}}"
           title="Your Account"
           footer="View your details"
           onClick="onAccountCardClick"

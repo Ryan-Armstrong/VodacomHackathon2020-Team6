@@ -1,16 +1,9 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-    <!-- <view class="header-text">Profile</view> -->
-    <button type="default"  class="addPolicyButton" onTap="addPolicyButton">
-              +
-          </button>
-  </view>
-
   <view class="content">
     <view class="row">
       <view class="column">
+        <button class="addPolicyButton" onTap="addPolicyButton">Add Policy</button>
         <view a:if="{{user.policies.includes('deviceInsurance')}}" class="full-width">
           <card
           thumb="{{thumb}}"

@@ -10,5 +10,6 @@
         "grid": "mini-antui/es/grid/index",
         "footer": "mini-antui/es/footer/index",
         "modal": "mini-antui/es/modal/index"
-    }
+    },
+   "defaultTitle": "Device Insurance"
 }

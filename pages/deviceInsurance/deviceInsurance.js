@@ -19,6 +19,7 @@ Page({
   },
   onLoad() {
     this.data.deviceInsurance = app.user.deviceInsurance;
+    this.data.user.policies = app.user.policies;
     this.data.leng = [...Array(this.data.deviceInsurance.devices.models.length).keys()]
   },
   openAddModal() {
@@ -42,7 +43,7 @@ Page({
     });
   },
   onModalRemoveClick: function(e) {
-    debugger
+    
     this.setData({
       modalRemoveOpened: false,
     });
@@ -63,20 +64,20 @@ Page({
   },
   formAddReset: function() {
     console.log('form has a reset event')
-    debugger
+    
   },
   formRemoveSubmit: function(e) {
     console.log('form has a submit event, carrying data ', e.detail.value)
     this.data.deviceInsurance.devices.dependents.splice(e.detail.value["radio-group"], 1)
     this.data.deviceInsurance.devices.models.splice(e.detail.value["radio-group"], 1)
     this.data.deviceInsurance.devices.numbers.splice(e.detail.value["radio-group"], 1)
-    debugger
+    
     my.navigateTo({
       url: '../deviceInsurance/deviceInsurance'
     });
   },
   formRemoveReset: function() {
-    debugger
+    
     console.log('form has a reset event')
   }
 });

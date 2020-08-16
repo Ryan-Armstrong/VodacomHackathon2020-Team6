@@ -7,28 +7,90 @@
 
   <view class="content">
     <view class="content-box">
-      <view class="column">
-        <view class="row">
-          Device Insurance
-        </view>
-        <view class="row-flex">
-          <view class="row-title">Date of Commencement</view>
-          <view class="row-extra">{{deviceInsurance.startDate}}</view>
-        </view>
-        <view class="row">
-          Devices
-        </view>
-        <view a:for="{{leng}}" a:for-item="i" class="row-flex">
-          <view class="row-title">{{deviceInsurance.devices.dependents[i]}}</view>
-          <view class="row-extra">{{deviceInsurance.devices.models[i].model}}</view>
-        </view>
-        <view class="forceButtonsBottom">
-          <view class="btn-area">
-            <button class="submitResetButton" onTap="openAddModal">Add Device</button>
-            <button class="submitResetButton" onTap="openRemoveModal">Remove Device</button>
-          </view>  
+      <view a:if="{{user.policies.includes('deviceInsurance')}}" class="full-width">
+        <view class="column">
+          <view class="row">
+            Device Insurance
+          </view>
+          <view class="row-flex">
+            <view class="row-title">Date of Commencement</view>
+            <view class="row-extra">{{deviceInsurance.startDate}}</view>
+          </view>
+          <view class="row">
+            Devices
+          </view>
+          <view a:for="{{leng}}" a:for-item="i" class="row-flex">
+            <view class="row-title">{{deviceInsurance.devices.dependents[i]}}</view>
+            <view class="row-extra">{{deviceInsurance.devices.models[i].model}}</view>
+          </view>
+          <view class="forceButtonsBottom">
+            <view class="btn-area">
+              <button class="submitResetButton" onTap="openAddModal">Add Device</button>
+              <button class="submitResetButton" onTap="openRemoveModal">Remove Device</button>
+            </view>  
+          </view>
         </view>
       </view>
+
+      <view a:else class="full-width">
+         <view class="column">
+          <view class="row">
+            Device Insurance 
+          </view>
+          <view class="row">
+            Information Carousel
+          </view>
+          
+          <card
+              thumb="{{thumb}}"
+              title="Comprehensive Insurance"
+              footer="From only R20/month"
+              onClick="onComprehensiveInsurance"
+              info=""
+            />   
+          <view class="card-bottom">
+            Loss, Theft, Accidental Damage Insurance, Water Damage, Worldwide Cover
+          </view>
+          <view class="row">
+            <button size="default" type="primary">Activate</button>
+          </view>
+
+          <card
+              thumb="{{thumb}}"
+              title="Accidental Damage"
+              footer="From only R20/month"
+              onClick="onAccidentalDamage"
+              info=""
+            />   
+          <view class="card-bottom">
+            Cover for any type of damage, including liquid damage
+          </view>
+          <view class="row">
+            <button size="default" type="primary">Activate</button>
+          </view>
+
+          <card
+              thumb="{{thumb}}"
+              title="Specified Insured Extras"
+              footer="From only R80/month"
+              onClick="onSpecifiedInsuredExtras"
+              info=""
+            />   
+          <view class="card-bottom">
+            Cover for your accessories, such as Gear Fit or Apple TV
+          </view>
+          <view class="row">
+            <button size="default" type="primary">Activate</button>
+          </view>
+
+          
+          
+        </view>
+
+
+
+      </view>
+
     </view> 
   </view>
 

@@ -15,6 +15,7 @@
   ],
   "window": {
     "defaultTitle": "VodaSure",
-    "titleBarColor": "#323239"
+    "titleBarColor": "#bd0000",
+    "titleImage": "{{'/assets/profile.png'}}"
   }
 }

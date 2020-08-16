@@ -5,7 +5,67 @@
   </view>
 
   <view class="content">
-    dial A Teacher
+    <view class="content-box">
+      <view class="column">
+        <view a:if="{{user.policies.includes('heroAssistance')}}" class="full-width">
+          <view class="row">
+            Dial A Teacher
+          </view>
+          <view class="row-flex">
+            <view class="row-title">Date of Commencement</view>
+            <view class="row-extra">{{dialATeacher.startDate}}</view>
+          </view>
+        </view>
+
+        <view a:else class="full-width">
+         <view class="column">
+          <view class="row">
+            Dial A Teacher
+          </view>
+          <view class="row">
+            Information Carousel
+          </view>
+          
+          <card
+              thumb="{{thumb}}"
+              title="Highly Qualified team of tutors"
+              footer="We provide access to professional and qualified tutors. Their role is to encourage, explain and assist children during those difficult moments of homework."
+              onClick="onComprehensiveInsurance"
+              info=""
+            />
+
+          <card
+              thumb="{{thumb}}"
+              title="All major subjects, grade 1 - 12"
+              footer="Our tutors are equipped to assist with Maths, Natural Science, History, Geography, English, Afrikaans, Economics, Business Economics and Biology / Life Science."
+              onClick="onAccidentalDamage"
+              info=""
+            />
+
+          <card
+              thumb="{{thumb}}"
+              title="Support over phone and email"
+              footer="Tutors are supported by administrative, research and IT personnel who assist in IT database compilation and project research."
+              onClick="onSpecifiedInsuredExtras"
+              info=""
+            />
+          <view class="row">
+            <view>
+              For only R46/month
+            </view>
+            <button size="default" type="primary">Activate</button>
+          </view>
+
+          
+          
+        </view>
+
+
+
+      </view>
+
+      </view>
+    </view>
   </view>
 
   <view>

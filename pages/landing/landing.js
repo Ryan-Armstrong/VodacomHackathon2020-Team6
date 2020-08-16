@@ -72,12 +72,12 @@ Page({
     my.navigateTo({ url: '../policies/policies' });
     },
   onHeroAssistCardClick: function(ev) {
-    // my.makePhoneCall({ number: '+27XXXXXXXXX' });
-    my.alert({
-      title: 'Call',
-      content: 'This would make a call.',
-      buttonText: 'Call'
-    });
+    my.makePhoneCall({ number: '+27XXXXXXXXX' });
+    // my.alert({
+    //   title: 'Call',
+    //   content: 'This would make a call.',
+    //   buttonText: 'Call'
+    // });
   },
   onDialATeacherCardClick: function(ev) {
     // my.makePhoneCall({ number: '+27XXXXXXXXX' }); 
