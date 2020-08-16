@@ -1,7 +1,7 @@
 App({
   user:
   {
-    policies: ['heroAssistance', 'deviceInsurance'],
+    policies: ['heroAssistance', 'deviceInsurance', 'dialATeacher', 'funeralCover', 'lifeCover', 'legalCover'],
     heroAssistance: {
       startDate: '2020-08-14',
     },
@@ -70,6 +70,7 @@ App({
       owner: '',
       description: ''
     },
+    claims: [],
     consultant:
     {
       funeralCover: false,

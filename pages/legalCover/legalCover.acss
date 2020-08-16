@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 .header {
@@ -34,37 +34,49 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  height: 100%;
   font-size: 34rpx;
   color: white;
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
   overflow: auto;
-  width: 100%;
-  height: 100%;
+}
+
+.content-header {
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0.5rem 0.5rem 0rem 0.5rem !important;
+}
+
+.content-middle {
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0.5rem 0.5rem 0rem 0.5rem !important;
 }
 
 .content-box {
   display: flex;
   margin: auto;
-  /* align-items: center; */
+  align-items: center;
   vertical-align: middle;
   /* height: 1000rpx; */
   /* width: 720rpx; */
   height: 95%;
   width: 90%;
-  background-color: white;
-  border: 2rpx solid grey;
+  background-color: #f1f1f1;
+  border: 2rpx solid #f1f1f1;
   border-radius: 4rpx;
   color: black;
 }
 
 .column {
-  /* float: left;
-  width: 50%; */
-  /* display: grid; */
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  width: 100%;
   flex: 50%;
-  padding: 0rpx 20rpx;
-  /* justify-items: center; */
+  justify-items: center;
 }
 
 .row {
@@ -75,6 +87,27 @@
 .row-flex {
   width: calc(100% - 40rpx);
   margin: 10rpx 20rpx 0rpx;
+}
+
+.row-title {
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0rem 0.1rem;
+  font-size: 20px;
+}
+
+.row-title-button {
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0rem 0.1rem;
+}
+
+.row-extra {
+  text-align: center;
+}
+
+.row-extra-button {
+
 }
 
 .row-flex-modal {
@@ -157,6 +190,7 @@
 
 .full-width {
   width: 100%;
+  height: 100%;
   /* position: relative; */
   /* left: -0.25rem; */
 }
@@ -211,16 +245,6 @@
   height: 100%;
 }
 
-.row-title {
-  width: 70%;
-  float: left;
-}
-
-.row-extra {
-  width: 30%;
-  float: right;
-}
-
 .row-title-modal {
   width: 45%;
   text-align: left;
@@ -240,12 +264,22 @@
 }
 
 
+.btn-area {
+  display: flex;
+  justify-content: center;
+
+}
+
 .submitResetButton {
+  width: 40%;
   margin: 10rpx;
+  background-color: rgb(230,0,0);
+  border-radius: 10rpx;
+  color: white;
 }
 
 .forceButtonsBottom {
   position: relative;
-  top: 5.5rem;
+  top: 3.75rem;
   text-align: center;
 }

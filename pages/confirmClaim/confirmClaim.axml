@@ -1,30 +1,30 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-  </view>
-
   <view class="content">
-    
     <view class="content-box">
       <form class="makeAClaimForm" onSubmit="formSubmit" onReset="formReset">
         <view class="column">
-          <view class="row">
+          <view class="row content-header">
             <view> Your Claim </view>
           </view>
           <view class="row">
-            <view> Your device: {{deviceSelection}}</view>
+            <view class="row-flex">
+              <view class="row-title">Your Device </view>
+              <view class="row-extra">{{deviceSelection}}</view>
+            </view>
           </view>
           <view class="row">
-            <view> Claimant: {{owner}}</view>
+            <view class="row-flex">
+              <view class="row-title">Claimant </view>
+              <view class="row-extra">{{owner}}</view>
+            </view>
           </view>
           <view class="row">
-            <view> Claim Details: </view>
+            <view class="row-flex">
+              <view class="row-title">Claim Details </view>
+              <view class="row-extra">{{description}}</view>
+            </view>
           </view>
-          <view class="row claimDescription">
-            {{description}}
-          </view>
-          
           <view class="forceButtonsBottom">
             <view class="btn-area">
               <button class="submitResetButton" formType="submit">Submit</button>
@@ -48,10 +48,10 @@
       show="{{modalOpened}}"
       onModalClick="onModalClick"
       onModalClose="onModalClose"
-      topImage="https://gw.alipayobjects.com/zos/rmsportal/yFeFExbGpDxvDYnKHcrs.png"
+      topImage="{{'/assets/complete.png'}}"
     >
-      <view slot="header">Claim Submission</view>
-      By submitting, you state that the given details are correct and truthful. 
+      <view slot="header">Submitted</view>
+        Your claim has been submitted!
       <view slot="footer">Confirm</view>
     </modal>
   </view>

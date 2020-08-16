@@ -37,8 +37,24 @@
   height: 100%;
   font-size: 34rpx;
   color: white;
-  background-color: lightgrey;
+  background-color: #f1f1f1;
   overflow: auto;
+}
+
+.content-header {
+  display: flex;
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0.5rem 0.5rem 0rem 0.5rem !important;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.centre {
+  text-align: center;
 }
 
 .column {
@@ -53,8 +69,7 @@
 .row {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 40rpx);
-  margin: 10rpx 20rpx 0rpx;
+  margin: 10rpx 20rpx 40rpx;
 }
 
 .row-flex {
@@ -130,8 +145,8 @@
   /* width: 720rpx; */
   height: 95%;
   width: 90%;
-  background-color: white;
-  border: 2rpx solid grey;
+  background-color: #f1f1f1;
+  border: 2rpx solid #f1f1f1;
   border-radius: 4rpx;
   color: black;
 }
@@ -142,26 +157,31 @@
 }
 
 .row-title {
-  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0rem 0.1rem;
+  font-size: 20px;
 }
 
 .row-extra {
-  float: right;
+  text-align: center;
 }
 
 .btn-area {
   display: flex;
   justify-content: center;
-
 }
 
 .submitResetButton {
   width: 40%;
   margin: 10rpx;
+  background-color: rgb(230,0,0);
+  border-radius: 10rpx;
+  color: white;
 }
 
 .forceButtonsBottom {
   position: relative;
-  top: 6.25rem;
+  top: 3.25rem;
   text-align: center;
 }
