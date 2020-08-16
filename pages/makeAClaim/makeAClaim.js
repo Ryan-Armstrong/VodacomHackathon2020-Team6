@@ -53,7 +53,9 @@ Page({
     });
   },
   formReset: function() {
-    console.log('form has a reset event')
+    my.navigateTo({
+      url: '../makeAClaim/makeAClaim'
+    });
   },
   bindKeyInput: function(e) {
     

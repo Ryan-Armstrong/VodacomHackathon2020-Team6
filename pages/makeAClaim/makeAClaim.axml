@@ -1,24 +1,19 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-  </view>
-
   <view class="content">
-    
     <view class="content-box">
       <form class="makeAClaimForm" onSubmit="formSubmit" onReset="formReset">
         <view class="column">
-          <view class="row">
+          <view class="row content-header">
             <view> Make A Claim </view>
           </view>
-          <view class="row">
+          <view class="row centre">
             <view> For what policy are you making a claim? </view>
           </view>
           <view class="row">
             <picker onChange="bindObjPickerChangeCover" value="{{arrIndex}}" range="{{user.policies}}" range-key="model">
               <view class="row-flex">
-                <view class="row-title">Claim</view>
+                <view class="row-title">Policy: </view>
                 <view class="row-extra">{{user.policies[arrCoverIndex]}}</view>
               </view>
             </picker>
@@ -28,26 +23,26 @@
             <view class="row">
               <picker onChange="bindObjPickerChangeDevice" value="{{arrDeviceIndex}}" range="{{user.deviceInsurance.devices.models}}" range-key="model">
                 <view class="row-flex">
-                  <view class="row-title">Device</view>
+                  <view class="row-title">Device: </view>
                   <view class="row-extra">{{user.deviceInsurance.devices.models[arrDeviceIndex].model}}</view>
                 </view>
               </picker>
             </view>
             <view class="row">
               <view class="row-flex">
-                  <view class="row-title">Owner</view>
+                  <view class="row-title">Owner: </view>
                   <view class="row-extra">{{user.deviceInsurance.devices.dependents[arrDeviceIndex]}}</view>
                 </view>
             </view>
             <view class="row">
               <view class="row-flex">
-                  <view class="row-title">Contact Number</view>
+                  <view class="row-title">Contact Number: </view>
                   <view class="row-extra">{{user.deviceInsurance.devices.numbers[arrDeviceIndex]}}</view>
                 </view>
             </view>
             <view class="row">
               <view class="row-flex">
-                <input placeholder="Please describe the reason for the claim."/>
+                <input class="full-width" placeholder="Please describe the reason for the claim."/>
               </view>
             </view>
             <view class="forceButtonsBottom">
