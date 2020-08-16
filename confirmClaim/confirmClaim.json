@@ -1,7 +1,0 @@
-{
-    "usingComponents": {
-        "footer": "mini-antui/es/footer/index",
-        "modal": "mini-antui/es/modal/index"
-    },
-   "defaultTitle": "Confirm Claim"
-}

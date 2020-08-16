@@ -1,7 +1,0 @@
-{
-    "usingComponents": {
-        "footer": "mini-antui/es/footer/index",
-        "card": "mini-antui/es/card/index"
-    },
-   "defaultTitle": "Your Policies"
-}

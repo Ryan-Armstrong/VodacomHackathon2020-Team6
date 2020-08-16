@@ -1,6 +1,0 @@
-{
-    "usingComponents": {
-        "footer": "mini-antui/es/footer/index"
-    },
-   "defaultTitle": "Claim"
-}
