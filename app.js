@@ -1,7 +1,7 @@
 App({
   user:
   {
-    policies: ['deviceInsurance', 'funeralCover', 'lifeCover', 'legalCover', 'heroAssistance', 'dialATeacher'],
+    policies: [],
     monthlyCost: 0,
     heroAssistance: {
       startDate: '2020-08-14',
