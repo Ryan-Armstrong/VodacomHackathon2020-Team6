@@ -28,11 +28,8 @@
 
         <view a:else class="full-width">
          <view class="column">
-          <view class="row">
+          <view class="content-header">
             Funeral Cover 
-          </view>
-          <view class="row">
-            Information Carousel
           </view>
           
           <card
@@ -44,9 +41,9 @@
             />   
           <view class="card-bottom">
             Cover for you and your family, including unlimited children at no additional cost 
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
 
           <card
@@ -58,9 +55,9 @@
             />   
           <view class="card-bottom">
             Individual funeral cover, just for you
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
 
           <card
@@ -72,9 +69,9 @@
             />   
           <view class="card-bottom">
             Family funeral cover for you, your spouse and up to 5 children.
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
         </view>
       </view>

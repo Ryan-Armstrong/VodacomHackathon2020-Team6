@@ -28,11 +28,8 @@
 
         <view a:else class="full-width">
          <view class="column">
-          <view class="row">
+          <view class="content-header">
             Legal Cover 
-          </view>
-          <view class="row">
-            Information Carousel
           </view>
           
           <card
@@ -44,9 +41,9 @@
             />   
           <view class="card-bottom">
             R110 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, 11 additional benefits
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
 
           <card
@@ -58,9 +55,9 @@
             />   
           <view class="card-bottom">
             R180 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, accidental death benefit, bail money, 18 additional benefits
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
 
           <card
@@ -72,11 +69,10 @@
             />   
           <view class="card-bottom">
             R240 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, accidental death benefit, bail money, 23 additional benefits
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
-          </view>
-
           
           
         </view>

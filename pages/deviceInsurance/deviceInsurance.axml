@@ -18,7 +18,7 @@
             <view class="row-title">{{deviceInsurance.devices.dependents[i]}}</view>
             <view class="row-extra">{{deviceInsurance.devices.models[i].model}}</view>
           </view>
-          <view class="forceButtonsBottom">
+          <view class="forceButtonsBottomFull">
             <view class="btn-area">
               <button class="submitResetButton" onTap="openAddModal">Add Device</button>
               <button class="submitResetButton" onTap="openRemoveModal">Remove Device</button>
@@ -29,11 +29,8 @@
 
       <view a:else class="full-width">
          <view class="column">
-          <view class="row">
+          <view class="content-header">
             Device Insurance 
-          </view>
-          <view class="row">
-            Information Carousel
           </view>
           
           <card
@@ -45,9 +42,9 @@
             />   
           <view class="card-bottom">
             Loss, Theft, Accidental Damage Insurance, Water Damage, Worldwide Cover
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
 
           <card
@@ -59,9 +56,9 @@
             />   
           <view class="card-bottom">
             Cover for any type of damage, including liquid damage
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onAccidentDamage">Activate</button>
+            </view>
           </view>
 
           <card
@@ -73,11 +70,12 @@
             />   
           <view class="card-bottom">
             Cover for your accessories, such as Gear Fit or Apple TV
-          </view>
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onAccidentDamage">Activate</button>
+            </view>
           </view>
 
+          
           
           
         </view>
@@ -141,15 +139,5 @@
 </view>
 
 
-
-
-<!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
-
-
-<view>
-  <footer
-    copyright="{{copyright}}"
-    links="{{links}}" />
-</view>
 
 </view>
