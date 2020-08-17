@@ -28,11 +28,8 @@
 
         <view a:else class="full-width">
          <view class="column">
-          <view class="row">
+          <view class="content-header">
             Life Cover 
-          </view>
-          <view class="row">
-            Information Carousel
           </view>
           
           <card
@@ -58,15 +55,11 @@
             onClick="onSpecifiedInsuredExtras"
             info=""
           />
-          <card
-            thumb="{{thumb}}"
-            title="From only R80/month"
-            footer=""
-            onClick="onSpecifiedInsuredExtras"
-            info=""
-          />
-          <view class="row">
-            <button size="default" type="primary">Activate</button>
+          <view class="card-bottom">
+            From only R80/month
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+            </view>
           </view>
         </view>
       </view>

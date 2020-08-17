@@ -15,11 +15,8 @@
 
         <view a:else class="full-width">
          <view class="column">
-          <view class="row">
+          <view class="content-header">
             Dial A Teacher
-          </view>
-          <view class="row">
-            Information Carousel
           </view>
           
           <card
@@ -45,11 +42,11 @@
               onClick="onSpecifiedInsuredExtras"
               info=""
             />
-          <view class="row">
-            <view>
-              For only R46/month
+          <view class="card-bottom">
+            For only R46/month
+            <view class="row-button">
+              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
             </view>
-            <button size="default" type="primary">Activate</button>
           </view>
 
           
