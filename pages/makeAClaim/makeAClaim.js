@@ -85,4 +85,11 @@ Page({
       buttonText: 'Call'
     });
   },
+  bookConsultant: function(e) {
+    my.alert({
+      title: 'Call',
+      content: 'This would allow you to book a consultant at using their calendar.',
+      buttonText: 'Call'
+    });
+  }
 });
