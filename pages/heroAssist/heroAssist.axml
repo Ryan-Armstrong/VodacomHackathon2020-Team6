@@ -52,7 +52,7 @@
           <view class="card-bottom">
             For only R69/month
             <view class="row-button">
-              <button class="submitResetButton" onTap="onAccidentDamage">Activate</button>
+              <button class="submitResetButton" onTap="onHeroAssist">Activate</button>
             </view>
           </view>
 

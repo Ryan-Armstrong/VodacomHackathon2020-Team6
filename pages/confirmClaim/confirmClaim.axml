@@ -38,12 +38,6 @@
   </view>
 
   <view>
-    <footer
-      copyright="{{copyright}}"
-      links="{{links}}" />
-  </view>
-
-  <view>
     <modal
       show="{{modalOpened}}"
       onModalClick="onModalClick"

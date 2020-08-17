@@ -71,7 +71,7 @@
           <view class="card-bottom">
             Cover for your accessories, such as Gear Fit or Apple TV
             <view class="row-button">
-              <button class="submitResetButton" onTap="onAccidentDamage">Activate</button>
+              <button class="submitResetButton" onTap="onSpecifiedInsuredExtras">Activate</button>
             </view>
           </view>
 

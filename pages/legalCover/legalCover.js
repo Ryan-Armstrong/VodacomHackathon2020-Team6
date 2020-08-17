@@ -79,5 +79,29 @@ Page({
   formRemoveReset: function() {
     
     console.log('form has a reset event')
+  },
+  onEssential: function(e) {
+    app.user.policies.push('legalCover');
+    app.user.monthlyCost = app.user.monthlyCost + 109;
+    app.user.legalCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
+  onCore: function(e) {
+    app.user.policies.push('legalCover');
+    app.user.monthlyCost = app.user.monthlyCost + 179;
+    app.user.legalCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
+  onExtras: function(e) {
+    app.user.policies.push('legalCover');
+    app.user.monthlyCost = app.user.monthlyCost + 239;
+    app.user.legalCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
   }
 });

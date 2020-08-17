@@ -21,4 +21,12 @@ Page({
     this.data.heroAssistance = app.user.heroAssistance;
     this.data.user.policies = app.user.policies;
   },
+  onHeroAssist: function(e) {
+    app.user.policies.push('heroAssistance');
+    app.user.monthlyCost = app.user.monthlyCost + 69;
+    app.user.heroAssistance.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
 });

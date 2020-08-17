@@ -24,7 +24,6 @@ Page({
     this.data.user.policies = app.user.policies;
     this.data.user.devices = app.user.devices;
     this.data.user.monthlyCharge = app.user.monthlyCost;
-    debugger
   },
   onClaimsCardClick() {
     my.navigateTo({

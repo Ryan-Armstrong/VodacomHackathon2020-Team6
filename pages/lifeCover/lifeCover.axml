@@ -58,7 +58,7 @@
           <view class="card-bottom">
             From only R80/month
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onLifeCover">Activate</button>
             </view>
           </view>
         </view>
