@@ -65,12 +65,24 @@ Page({
     console.log('form has a submit event, carrying data ', e.detail.value)
   },
   contactConsultantFromFuneralCover: function(e) {
-    
+    my.alert({
+      title: 'Call',
+      content: 'This would contact a consultant.',
+      buttonText: 'Call'
+    });
   },
   contactConsultantFromLifeCover: function(e) {
-    
+    my.alert({
+      title: 'Call',
+      content: 'This would contact a consultant.',
+      buttonText: 'Call'
+    });
   },
   contactConsultantFromLegalCover: function(e) {
-    
+    my.alert({
+      title: 'Call',
+      content: 'This would contact a consultant.',
+      buttonText: 'Call'
+    });
   },
 });

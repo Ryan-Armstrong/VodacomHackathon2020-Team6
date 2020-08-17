@@ -59,7 +59,7 @@
               <view>
                 Click below to get a consultant to get back to you and start the process of claiming. 
               </view>
-              <button onTap="contactConsultantFromFuneralCover" class="contactConsultantButton" size="default" type="primary">Button</button>
+              <button onTap="contactConsultantFromFuneralCover" class="normalButton">Button</button>
             </view>
           </view>
 
@@ -69,7 +69,7 @@
               <view>
                 Click below to get a consultant to get back to you and start the process of claiming. 
               </view>
-              <button onTap="contactConsultantFromLifeCover" class="contactConsultantButton" size="default" type="primary">Button</button>
+              <button onTap="contactConsultantFromLifeCover" class="normalButton">Button</button>
             </view>
           </view>
 
@@ -79,7 +79,7 @@
               <view>
                 Click below to get a consultant to get back to you and start the process of claiming. 
               </view>
-              <button onTap="contactConsultantFromLegalCover" class="contactConsultantButton" size="default" type="primary">Button</button>
+              <button onTap="contactConsultantFromLegalCover" class="normalButton">Button</button>
             </view>
           </view>
 

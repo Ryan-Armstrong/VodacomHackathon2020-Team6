@@ -185,8 +185,20 @@
   color: white;
 }
 
+.normalButton {
+  width: 75%;
+  margin: 10rpx 0rpx 0rpx 90rpx;
+  background-color: rgb(230,0,0);
+  border-radius: 10rpx;
+  color: white;
+}
+
 .forceButtonsBottom {
   /* position: relative;
   top: 4rem;
   text-align: center; */
+}
+
+.noClaimAlert {
+  text-align: center;
 }
