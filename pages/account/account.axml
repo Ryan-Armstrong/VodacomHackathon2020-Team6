@@ -4,7 +4,7 @@
     <view class="row">
       <view class="column"> 
         <view class="content-header">
-          Your monthly payment is X
+          Your monthly payment is R{{user.monthlyCharge}}
         </view>      
         <card
           thumb="{{'/assets/document.png'}}"

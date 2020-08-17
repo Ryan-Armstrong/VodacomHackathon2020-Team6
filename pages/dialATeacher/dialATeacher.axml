@@ -3,7 +3,7 @@
   <view class="content">
     <view class="content-box">
       <view class="column">
-        <view a:if="{{user.policies.includes('heroAssistance')}}" class="full-width">
+        <view a:if="{{user.policies.includes('dialATeacher')}}" class="full-width">
           <view class="content-header">
             Dial A Teacher
           </view>
@@ -62,12 +62,6 @@
 
       </view>
     </view>
-  </view>
-
-  <view>
-    <footer
-      copyright="{{copyright}}"
-      links="{{links}}" />
   </view>
 
 </view>
