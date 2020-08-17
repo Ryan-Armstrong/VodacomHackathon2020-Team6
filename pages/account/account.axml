@@ -1,3 +1,19 @@
-<view>
-  New Page
+<view class="container">
+
+  <view class="content">
+    <view class="row">
+      <view class="column"> 
+        <view class="content-header">
+          Your monthly payment is X
+        </view>      
+        <card
+          thumb="{{'/assets/document.png'}}"
+          title="Claims"
+          footer="View your current claims."
+          onClick="onClaimsCardClick"
+          info="Click the card"
+        />
+      </view>
+    </view>
+  </view>
 </view>

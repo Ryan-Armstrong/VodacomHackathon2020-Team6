@@ -45,9 +45,12 @@ Page({
   formSubmit: function(e) {
     console.log('form has a submit event, carrying data ', e.detail.value)
     this.data.deviceSelection = this.data.user.deviceInsurance.devices.models[e.detail.value.__unknown_for_control_2].model;
+    var newClaim = {device: this.data.deviceSelection, date: Date(), owner: this.data.user.deviceInsurance.devices.dependents[e.detail.value.__unknown_for_control_2], device: this.data.deviceSelection, description: e.detail.value.__unknown_for_control_1};
+    app.user.claims.push(newClaim)
     app.user.claim.device = this.data.deviceSelection;
     app.user.claim.owner = this.data.user.deviceInsurance.devices.dependents[e.detail.value.__unknown_for_control_2];
     app.user.claim.description = e.detail.value.__unknown_for_control_1;
+    app.user.claim.date = Date();
     my.navigateTo({
       url: '../confirmClaim/confirmClaim'
     });

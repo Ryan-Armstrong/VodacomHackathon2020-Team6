@@ -11,7 +11,8 @@
     "pages/funeralCover/funeralCover",
     "pages/legalCover/legalCover",
     "pages/lifeCover/lifeCover",
-    "pages/account/account"
+    "pages/account/account",
+    "pages/claims/claims"
   ],
   "window": {
     "defaultTitle": "VodaSure",
