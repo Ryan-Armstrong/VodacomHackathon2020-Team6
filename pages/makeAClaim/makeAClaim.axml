@@ -57,19 +57,21 @@
             <view class="noClaimAlert">
               <view>There is no mobile claim available for this cover.</view>
               <view>
-                Click below to get a consultant to get back to you and start the process of claiming. 
+                Click below to call a consultant, or get back to you when you are available. 
               </view>
-              <button onTap="contactConsultantFromFuneralCover" class="normalButton">Button</button>
+              <button onTap="contactConsultantFromFuneralCover" class="normalButton">Contact Consultant</button>
+              <button onTap="bookConsultant" class="normalButton">Book Consultant</button>
             </view>
           </view>
 
           <view a:elif="{{coverSelection == 'lifeCover'}}">
-            <view class="noClaimAlert">
+           <view class="noClaimAlert">
               <view>There is no mobile claim available for this cover.</view>
               <view>
-                Click below to get a consultant to get back to you and start the process of claiming. 
+                Click below to call a consultant, or get back to you when you are available. 
               </view>
-              <button onTap="contactConsultantFromLifeCover" class="normalButton">Button</button>
+              <button onTap="contactConsultantFromFuneralCover" class="normalButton">Contact Consultant</button>
+              <button onTap="bookConsultant" class="normalButton">Book Consultant</button>
             </view>
           </view>
 
@@ -77,9 +79,10 @@
             <view class="noClaimAlert">
               <view>There is no mobile claim available for this cover.</view>
               <view>
-                Click below to get a consultant to get back to you and start the process of claiming. 
+                Click below to call a consultant, or get back to you when you are available. 
               </view>
-              <button onTap="contactConsultantFromLegalCover" class="normalButton">Button</button>
+              <button onTap="contactConsultantFromFuneralCover" class="normalButton">Contact Consultant</button>
+              <button onTap="bookConsultant" class="normalButton">Book Consultant</button>
             </view>
           </view>
 
