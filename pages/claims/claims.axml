@@ -1,0 +1,14 @@
+<view class="container">
+
+  <view class="content">
+    <view class="row">
+      <view class="column">    
+        <view a:for="{{leng}}" a:for-item="i" class="row-flex">
+            <view class="row-title">{{user.claims[i].device}}</view>
+            <view class="row-extra">{{dateObj}}</view>
+            <view class="row-overflow"> {{user.claims[i].description}} </view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

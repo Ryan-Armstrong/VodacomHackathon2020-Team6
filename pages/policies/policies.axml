@@ -68,25 +68,4 @@
   </view>
 
 
-
-<!-- <view>
-  <calendar
-    type="single"
-    tagData="{{tagData}}"
-    onSelect="handleSelect" />
-</view> -->
-
-
-
-
-
-<!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
-
-
-<view>
-  <footer
-    copyright="{{copyright}}"
-    links="{{links}}" />
-</view>
-
 </view>

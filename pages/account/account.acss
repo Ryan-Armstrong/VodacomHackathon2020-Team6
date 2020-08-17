@@ -1,1 +1,159 @@
-/* Empty */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-shrink: 0;
+  color: #FFF;
+  background-color: black;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 2px solid red;
+}
+
+.nav-icon {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 0rpx 10rpx 0rpx 10rpx;
+  display: inline-block
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 34rpx;
+  color: white;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+
+.content-header {
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0.5rem !important;
+  color: black;
+}
+
+.column {
+  /* float: left;
+  width: 50%; */
+  display: grid;
+  height: 100%;
+  flex: 50%;
+  padding: 0rpx 20rpx 20rpx;
+  justify-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.footer {
+  flex-shrink: 0;
+  font-size: 48rpx;
+  font-weight: 200;
+  text-align: center;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.am-card {
+  width: 90%;
+  box-shadow: 0px 5px 10px rgb(197, 194, 194);
+  border-radius: 4px;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+}
+
+.hero-assistance-card {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #f1f1f1;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: #f1f1f1;
+  background-image: url('/assets/voda_hero_text.png');
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-assistance-card-disabled {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #f1f1f1;
+  margin: 20rpx 24rpx 0rpx 24rpx;
+  align-items: center;
+  background-color: #f1f1f1;
+  background-image: url('/assets/voda_hero_text.png');
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+
+}
+
+.disabled {
+  width: 100%;
+  position: relative;
+  left: -0.24rem;
+  opacity: 0.4;
+}
+
+.full-width {
+  width: 100%;
+  position: relative;
+  left: -0.24rem;
+}
+
+
+/*
+.am-card-content {
+  min-width: 90%;
+}
+
+.am-card-arrow {
+  width: 0px;
+  height: 0px;
+}
+
+
+.am-card-title {
+  text-align: center;
+}
+.am-card-body {
+} */
+
+.am-card-thumb {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.am-card-footer {
+  border-top: 1px solid rgb(208,208,208)
+}
+
+.am-footer {
+  background-color: black;
+}

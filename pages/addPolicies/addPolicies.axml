@@ -1,10 +1,5 @@
 <view class="container">
 
-  <view class="header">
-    <image class="nav-icon" src="{{'../../assets/vodalogo.png'}}"></image>
-    <!-- <view class="header-text">Profile</view> -->
-  </view>
-
   <view class="content">
     <view class="row">
       <view class="column">
@@ -70,27 +65,5 @@
       </view>
     </view>
   </view>
-
-
-
-<!-- <view>
-  <calendar
-    type="single"
-    tagData="{{tagData}}"
-    onSelect="handleSelect" />
-</view> -->
-
-
-
-
-
-<!-- <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{list3}}" /> -->
-
-
-<view>
-  <footer
-    copyright="{{copyright}}"
-    links="{{links}}" />
-</view>
 
 </view>
