@@ -80,5 +80,13 @@ Page({
   formRemoveReset: function() {
     
     console.log('form has a reset event')
+  },
+  onLifeCover: function(e) {
+    app.user.policies.push('lifeCover');
+    app.user.monthlyCost = app.user.monthlyCost + 80;
+    app.user.lifeCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
   }
 });

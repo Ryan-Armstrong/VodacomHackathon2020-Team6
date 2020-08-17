@@ -42,7 +42,7 @@
           <view class="card-bottom">
             R110 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, 11 additional benefits
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onEssential">Activate</button>
             </view>
           </view>
 
@@ -56,7 +56,7 @@
           <view class="card-bottom">
             R180 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, accidental death benefit, bail money, 18 additional benefits
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onCore">Activate</button>
             </view>
           </view>
 
@@ -70,7 +70,7 @@
           <view class="card-bottom">
             R240 000 litigation cover/year, cover for policyholder, spouse and children under 20, unopposed divorce matters, accidental death benefit, bail money, 23 additional benefits
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onExtras">Activate</button>
             </view>
           </view>
           

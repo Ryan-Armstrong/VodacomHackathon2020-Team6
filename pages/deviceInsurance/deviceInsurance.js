@@ -79,5 +79,29 @@ Page({
   formRemoveReset: function() {
     
     console.log('form has a reset event')
+  },
+  onCompInsurance: function(e) {
+    app.user.policies.push('deviceInsurance');
+    app.user.monthlyCost = app.user.monthlyCost + 20;
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+    app.user.deviceInsurance.startDate = Date();
+  },
+  onAccidentDamage: function(e) {
+    app.user.policies.push('deviceInsurance');
+    app.user.monthlyCost = app.user.monthlyCost + 20;
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+    app.user.deviceInsurance.startDate = Date();
+  },
+  onSpecifiedInsuredExtras: function(e) {
+    app.user.policies.push('deviceInsurance');
+    app.user.monthlyCost = app.user.monthlyCost + 80;
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+    app.user.deviceInsurance.startDate = Date();
   }
 });

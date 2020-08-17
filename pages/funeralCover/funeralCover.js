@@ -80,5 +80,29 @@ Page({
   formRemoveReset: function() {
     
     console.log('form has a reset event')
+  },
+  onFamilyFuneral: function(e) {
+    app.user.policies.push('funeralCover');
+    app.user.monthlyCost = app.user.monthlyCost + 20;
+    app.user.funeralCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
+  onCover4U: function(e) {
+    app.user.policies.push('funeralCover');
+    app.user.monthlyCost = app.user.monthlyCost + 20;
+    app.user.funeralCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
+  onCover4UFamily: function(e) {
+    app.user.policies.push('funeralCover');
+    app.user.monthlyCost = app.user.monthlyCost + 80;
+    app.user.funeralCover.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
   }
 });

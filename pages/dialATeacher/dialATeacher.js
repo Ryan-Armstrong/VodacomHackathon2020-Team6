@@ -21,4 +21,12 @@ Page({
     this.data.dialATeacher = app.user.dialATeacher;
     this.data.user.policies = app.user.policies;
   },
+  onDialTeacher: function(e) {
+    app.user.policies.push('dialATeacher');
+    app.user.monthlyCost = app.user.monthlyCost + 46;
+    app.user.dialATeacher.startDate = Date();
+    my.reLaunch({
+      url: '../landing/landing'
+    });
+  },
 });

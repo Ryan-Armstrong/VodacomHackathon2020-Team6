@@ -36,13 +36,13 @@
               thumb="{{thumb}}"
               title="Family Funeral"
               footer="From only R20/month"
-              onClick="onComprehensiveInsurance"
+              onClick=""
               info=""
             />   
           <view class="card-bottom">
             Cover for you and your family, including unlimited children at no additional cost 
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onFamilyFuneral">Activate</button>
             </view>
           </view>
 
@@ -50,13 +50,13 @@
               thumb="{{thumb}}"
               title="Funeral Cover 4 U"
               footer="From only R20/month"
-              onClick="onAccidentalDamage"
+              onClick=""
               info=""
             />   
           <view class="card-bottom">
             Individual funeral cover, just for you
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onCover4U">Activate</button>
             </view>
           </view>
 
@@ -64,13 +64,13 @@
               thumb="{{thumb}}"
               title="Funeral Cover 4 U and Family"
               footer="From only R80/month"
-              onClick="onSpecifiedInsuredExtras"
+              onClick=""
               info=""
             />   
           <view class="card-bottom">
             Family funeral cover for you, your spouse and up to 5 children.
             <view class="row-button">
-              <button class="submitResetButton" onTap="onCompInsurance">Activate</button>
+              <button class="submitResetButton" onTap="onCover4UFamily">Activate</button>
             </view>
           </view>
         </view>
